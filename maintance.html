@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Voslot</title>
+</head>
+<body>
+    <style type="text/css" media="screen">
+    html,body{
+        -ms-text-size-adjust:100%;
+        -webkit-text-size-adjust:100%;
+        font-family:'Microsoft YaHei', 'Microsoft JhengHei', 'PingFangTC', Helvetica;
+        padding: 0;
+        margin: 0;
+        -webkit-text-size-adjust:none;
+        -webkit-overflow-scrolling:touch;
+        font-size:18px;
+    }
+    *{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+    article,footer,header,main{display:block;}
+    a{
+        display:block;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        background-color:transparent;
+    }
+    a:active,a:hover{ outline:0; }
+    img{ border:0; }
+    html, body, header, .MAINT_main_bg, footer{ min-width:320px; }
+
+    #MAINT_header{
+        height:70px;
+        background-color:#1e1f2c;
+        position: relative;
+    }
+    #MAINT_header > .logo{
+        position: relative;
+        height: 60%;
+        top: 20%;
+        display: block;
+        margin: auto;
+    }
+    .MAINT_main_bg{
+			
+            background: #000 url("https://img.hz6668i.com/img/static/503/default/main-bg.jpg") center/cover no-repeat;
+    }
+    #MAINT_main{
+            position: relative;
+            color:#fff;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 100%;
+      max-width: 1000px;
+            min-height: 870px;
+            height: calc(100vh - 70px);
+    }
+        #MAINT_main_idol{
+            position: absolute;
+            width: auto;
+            height: 100%;
+            max-height: 700px;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+        #MAINT_main_content{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+    #MAINT_main_content > ul{
+        list-style:none;
+        padding:30px 20px 5px;
+        margin: 0;
+    }
+    #MAINT_main_content li{
+            display: block;
+      margin-bottom: 10px;
+        background-color: rgba(0,0,0,0.6);
+        text-align: left;
+        padding: 15px 20px;
+        line-height: 1.4;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    #MAINT_main_content li:before{
+        content:"";
+        width: 37px;
+        height: 22px;
+        display: inline-block;
+        background-image:url("https://img.hz6668i.com/img/static/maintenance/default/MAINT_sprite.png");
+        margin-right: 3px;
+    }
+    #MAINT_main_content .zh-CN:before{background-position: -332px 0;}
+    #MAINT_main_content .en-US:before{background-position: -379px 0;}
+    #MAINT_main_content .vi-VN:before{background-position: -426px 0;}
+    #MAINT_main_content .th-TH:before{background-position: -473px 0;}
+    #MAINT_main_content .hi-IN:before{background-position: -520px 0;}
+    #MAINT_main_content .id-ID:before{background-position: -567px 0;}
+    #MAINT_main_content p{
+        font-weight:300;
+        line-height:1.7;
+        text-shadow:0 1px 8px #000;
+        display: inline;
+        vertical-align:text-bottom;
+    }
+    footer{
+        color:#ccc;
+        font-size: 14px;
+        text-align: center;
+        line-height:40px;
+        background-color:#191919;
+    }
+    footer > p{margin:0;}
+    @media screen and (min-width:770px) {
+        #MAINT_header{height: 110px;}
+        #MAINT_header > h2{
+            width: 244px;
+            height: 44px;
+            background-size:auto;
+        }
+        #MAINT_main{
+                        min-height: 870px;
+                        height: calc(100vh - 110px);
+        }
+                #MAINT_main_idol{
+                    display: block;
+                }
+                #MAINT_main_content{
+                    width: 600px;
+                }
+        #MAINT_main_content > ul{padding:40px 35px 15px;}
+        #MAINT_main_content li{position: relative;}
+        #MAINT_main_content li:before{
+            position:absolute;
+            top: 20px;
+            left: 15px;
+        }
+        #MAINT_main_content p{
+            font-size: 16px;
+            display: block;
+            margin:0 0 0 48px;
+        }
+    }
+    .bg_shadow {
+        display: block;
+        margin-bottom: 10px;
+        background-color: rgba(0,0,0,0.6);
+        text-align: left;
+        padding: 15px 20px;
+        line-height: 1.4;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .cs_pic {
+        width: 54px;
+        min-width: 54px;
+        height: 54px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: movehand 2s infinite;
+        margin: 0 auto;
+    }
+    .cs {
+        background-image: linear-gradient(rgba(231,33,193,0)10%, rgba(231,200,200,0.493)90%);
+        color: #e721c1;
+        margin: 0 auto;
+        width: 120px;
+        border-radius: 20px;
+        margin-left: 20px;
+        padding: 20px;
+        font-size: xx-small;
+        text-align: center;
+    }
+    @keyframes movehand {
+        0% {
+            transform: translate(10px, 10px)
+        }
+
+        100% {
+            transform: translate(10px, -20px)
+        }
+    }
+</style>
+<header id="MAINT_header">
+    <img src="https://img.hz6668i.com/img/static/desktop/brand/voslot/logo.png" class="logo">
+</header>
+<div class="MAINT_main_bg">
+    <div id="MAINT_main">
+            <div id="MAINT_main_content" style="margin: 0 auto" class="bg_shadow">
+                <p>VOSLOT APP will be down for maintenance in order to provide our members a better gameplay experience.  Please visit the official website of VOSLOT, voslot.bet. Thanks for your cooperation!</p>
+                <div style="margin:20px">
+                    <a href="https://direct.lc.chat/13772910/" style="text-decoration: none;">
+                        <div class="link-info left" data-id="1227364">
+                          <div class="cs" style="background-color:#ffffff;color: #e721c1; margin: 0 auto">
+                            <img src="https://livechat.design/images/livechat/DIGITAL%20%28RGB%29/SVG/Mark_RGB_Orange.svg">Customer Service
+                          </div>
+                          <div class="cs_pic" data-background-image="https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=96/https://cdn-b.heylink.me/media/links/thumbnails/65f460a1a0a64aa2b4e21e5638358a09.png" data-background-delimiter="^" data-loaded="true" style="background-image: url(&quot;https://heylink.me/cdn-cgi/image/f=auto,q=85,fit=crop,w=96/https://cdn-b.heylink.me/media/links/thumbnails/65f460a1a0a64aa2b4e21e5638358a09.png&quot;);"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <img id="MAINT_main_idol" src="https://img.hz6668i.com/img/static/503/default/fem.png">
+            
+    </div>
+</div>
+
+</body>
+</html>
