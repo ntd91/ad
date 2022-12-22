@@ -17,7 +17,7 @@ reget = (() => {
               let daily = maxdailyamt - dailyamt
               let total = maxtotalamt - totalamt
               if (daily < limit || total < limit) {
-                result += d.thirdpartypaymentcode + ': ' + d.thirdpartypaymentdisplayname['en-US'] + '每日or總收剩餘小於: ' + limit + '\r\n'
+                result += d.thirdpartypaymentcode + ': ' + d.thirdpartypaymentdisplayname['en-US'] + '每日已收: ' + daily + '總收已收' + total + ' 已小於' + limit + '\r\n'
               }
             })
             if (result != '') {
@@ -25,7 +25,8 @@ reget = (() => {
             }
           });
       }
+      reget()
       setInterval(() => {
         reget()
-      }, 900000);
+      }, 900000)
 })();
